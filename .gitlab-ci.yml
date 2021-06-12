@@ -61,7 +61,6 @@ Test SSH:
   script:
   # try to connect to your aws server
   - scp index.html ec2-user@3.67.70.171:/home/ec2-user/www
-  - "curl -X POST -F token=04ea89529c34fac8c9eb339ea07158 -F ref=main https://gitlab.com/api/v4/projects/27380885/trigger/pipeline"
 
  
  # try to clone yourself. A *PUBLIC* key paired to the SSH_PRIVATE_KEY was added as deploy key to this repository
